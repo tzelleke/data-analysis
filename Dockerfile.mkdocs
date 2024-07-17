@@ -1,0 +1,7 @@
+FROM squidfunk/mkdocs-material:latest
+ENV PYTHONDONTWRTIEBYTECODE 1
+RUN pip install \
+    mkdocs-awesome-pages-plugin \
+    mkdocs-macros-plugin \
+    mkdocs-mermaid2-plugin \
+    mkdocs-glightbox

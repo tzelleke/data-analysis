@@ -1,0 +1,61 @@
+site_name: Data Analysis
+repo_url: https://github.com/tzelleke/data-analysis
+repo_name: tzelleke/data-analysis
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences: # make exceptions to highlighting of code:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+            # - name: vegalite
+            #   class: vegalite
+            #   format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+
+plugins:
+  - search:
+  # - charts:
+  # - mkdocstrings:
+  - awesome-pages:
+  - macros:
+  # - glightbox:
+  #     touchNavigation: true
+  #     loop: false
+  #     effect: zoom
+  #     slide_effect: slide
+  #     width: 100%
+  #     height: auto
+  #     zoomable: true
+  #     draggable: true
+  #     skip_classes:
+  #       - custom-skip-class-name
+  #     auto_caption: false
+  #     caption_position: bottom
+  - mermaid2:
+      arguments:
+        theme: "dark"
+# TODO: serve from project
+# extra_css:
+# - https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css
+# extra_javascript:
+# glightbox
+# - https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js
+# charts
+# - https://cdn.jsdelivr.net/npm/vega@5
+# - https://cdn.jsdelivr.net/npm/vega-lite@5
+# - https://cdn.jsdelivr.net/npm/vega-embed@6
