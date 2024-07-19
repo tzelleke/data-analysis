@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "data-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.29.5"
+requests = "^2.32.3"
+pydash = "^8.0.1"
+duckdb = "^1.0.0"
+jupysql = "^0.10.12"
+vizro = "^0.1.19"
+playwright = "^1.45.0"
+duckdb-engine = "^0.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
